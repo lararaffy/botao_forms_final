@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay loop muted id="background-video">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <audio id="background-audio" autoplay loop>
+        <source src="background.MP3" type="audio/mp3">
+    </audio>
+    <div class="form-container">
+        <form id="myForm">
+            <h1>RESPONDA:</h1>
+            <p>Informações básicas pessoais.</p>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <p></p>
+            <label for="name">Idade:</label>
+            <input type="text" id="name" name="name" required>
+            <p></p>
+            <label for="name">Você se sente livre?</label>
+            <p></p>
+            <input type="radio" id="sim" name="livre" required>
+            <label for="livresim">Sim</label>
+            <p></p>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

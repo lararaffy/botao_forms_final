@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saída</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay loop muted id="background-video">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <audio id="background-audio" autoplay loop>
+        <source src="background.MP3" type="audio/mp3">
+    </audio>
+    <button id="saida">SAÍDA</button>
+    <div id="popup" style="display: none;">
+        <p>Realmente deseja sair? ALERTA: RISCO DE VÍRUS!</p>
+        <button id="sim">SIM</button>
+        <button id="nao">NÃO</button>
+    </div>
+    <div id="erro" style="display: none;">
+        <p>ERRO! <span id="caixa-preta"></span></p>
+    </div>
+    <script src="exit.js"></script>
+</body>
+</html>
