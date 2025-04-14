@@ -6,7 +6,7 @@ const caixaPreta = document.getElementById('caixa-preta');
 
 button.addEventListener('click', () => {
     clickCount++;
-    if (clickCount <= 21) {
+    if (clickCount <= 2) {
         moveButton();
     } else {
         showPopup();
@@ -26,14 +26,11 @@ function showPopup() {
     popup.style.display = 'block';
 }
 
-document.getElementById('sim').addEventListener('click', () => {
-    popup.style.display = 'none';
-    erro.style.display = 'block';
+document.getElementById('sim').addEventListener('click', function(voltar) {
     caixaPreta.textContent = '-.-. .- .. -..- .- / .--. .-. . - .-';
-    setTimeout(() => {
-        erro.style.display = 'none';
-    }, 3000);
-});
+    voltar.preventDefault();
+    window.location.href = 'index.html';
+  });
 
 document.getElementById('nao').addEventListener('click', () => {
     popup.style.display = 'none';
